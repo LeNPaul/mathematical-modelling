@@ -1,3 +1,5 @@
+%NOTE: Use hold on to to plot multiple plots with different p0, maybe write a general function that takes in p0 and outputs the data instead of copying the code multiple times
+
 %Setting the initial conditions and variables
 v0 = 1;
 y = [];
