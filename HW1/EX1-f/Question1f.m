@@ -1,5 +1,3 @@
-%NOTE: Use hold on to to plot multiple plots with different p0, maybe write a general function that takes in p0 and outputs the data instead of copying the code multiple times
-
 %Setting the initial conditions and variables
 v0 = 1;
 y = [];
@@ -16,11 +14,7 @@ for i=1:n
     disp(waterLevel)
 end;
 
-%Plot data with colourful plot points
-sz = 25;
-c = linspace(1,10,length(x));
-
-scatter(x,y,sz,c,'filled')
+plot(x,y)
     title('Water Level vs. Time')
     xlabel('Time (Years)')
     ylabel('Water Level (Million Cubic Meters)')
