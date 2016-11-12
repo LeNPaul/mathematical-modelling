@@ -16,6 +16,7 @@ for i=1:n
     y = [y normrnd(mu,sigma)^3];
 end;
 
+subplot(2,2,1)
 hist(y,50);
     title([num2str(n) ' Samples of Random Variable r^3']);
     xlabel('');
@@ -46,6 +47,7 @@ for i=1:t
     y = [y R];
 end;
 
+subplot(2,2,2)
 plot(x,y);
     title(['Trial to t = ' num2str(t)]);
     xlabel('Time');
@@ -73,6 +75,7 @@ for i=1:t
     y = [y R];
 end;
 
+subplot(2,2,3)
 hist(y);
     title(['Trial to t = ' num2str(t)]);
     xlabel('Population');
@@ -103,6 +106,7 @@ for i=1:t
     y = [y R];
 end;
 
+subplot(2,2,4)
 hist(y);
     title(['Trial to t = ' num2str(t)]);
     xlabel('Population');
